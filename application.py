@@ -12,6 +12,7 @@ def hello_world():
   score = storage.score()
   return "Hello Beijing 123, %d!" % score
 
+
 class Storage():
   def __init__(self):
     self.db = MySQLdb.connect(
@@ -36,4 +37,4 @@ class Storage():
     return row[0]
 
 if __name__ == "__main__":
-  application.run(host='0.0.0.0', port=3000)
+  application.run(host='0.0.0.0', port = 3000)
